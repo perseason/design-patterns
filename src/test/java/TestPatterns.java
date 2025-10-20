@@ -1,5 +1,4 @@
 import org.junit.Test;
-import pers.lilpen.patterns.demo.decorator.*;
 import pers.lilpen.patterns.demo.behavioral.observer.BinaryOutputObserver;
 import pers.lilpen.patterns.demo.behavioral.observer.PrintObserver;
 import pers.lilpen.patterns.demo.behavioral.observer.RandomNumSubject;
