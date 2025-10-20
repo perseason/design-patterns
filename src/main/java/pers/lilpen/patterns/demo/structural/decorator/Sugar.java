@@ -1,4 +1,4 @@
-package pers.lilpen.patterns.demo.decorator;
+package pers.lilpen.patterns.demo.structural.decorator;
 
 import org.apache.commons.lang3.StringUtils;
 

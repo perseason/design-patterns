@@ -1,4 +1,4 @@
-package pers.lilpen.patterns.demo.visitor;
+package pers.lilpen.patterns.demo.behavioral.visitor;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,11 +1,12 @@
 import org.junit.Test;
 import pers.lilpen.patterns.demo.decorator.*;
-import pers.lilpen.patterns.demo.observer.BinaryOutputObserver;
-import pers.lilpen.patterns.demo.observer.PrintObserver;
-import pers.lilpen.patterns.demo.observer.RandomNumSubject;
-import pers.lilpen.patterns.demo.visitor.Directory;
-import pers.lilpen.patterns.demo.visitor.File;
-import pers.lilpen.patterns.demo.visitor.ListVisitor;
+import pers.lilpen.patterns.demo.behavioral.observer.BinaryOutputObserver;
+import pers.lilpen.patterns.demo.behavioral.observer.PrintObserver;
+import pers.lilpen.patterns.demo.behavioral.observer.RandomNumSubject;
+import pers.lilpen.patterns.demo.behavioral.visitor.Directory;
+import pers.lilpen.patterns.demo.behavioral.visitor.File;
+import pers.lilpen.patterns.demo.behavioral.visitor.ListVisitor;
+import pers.lilpen.patterns.demo.structural.decorator.*;
 
 /**
  * @author : penghuaishun

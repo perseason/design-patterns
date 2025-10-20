@@ -1,4 +1,4 @@
-package pers.lilpen.patterns.demo.observer;
+package pers.lilpen.patterns.demo.behavioral.observer;
 
 /**
  * @author : penghuaishun
