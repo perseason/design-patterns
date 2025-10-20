@@ -1,5 +1,8 @@
 import org.junit.Test;
 import pers.lilpen.patterns.demo.decorator.*;
+import pers.lilpen.patterns.demo.observer.BinaryOutputObserver;
+import pers.lilpen.patterns.demo.observer.PrintObserver;
+import pers.lilpen.patterns.demo.observer.RandomNumSubject;
 import pers.lilpen.patterns.demo.visitor.Directory;
 import pers.lilpen.patterns.demo.visitor.File;
 import pers.lilpen.patterns.demo.visitor.ListVisitor;
@@ -35,5 +38,17 @@ public class TestPatterns {
         File anime = new File("anime.mp4", 1024);
         downloads.add(anime);
         root.accept(new ListVisitor());
+    }
+
+    @Test
+    public void testObserver() {
+        BinaryOutputObserver binaryOutputObserver = new BinaryOutputObserver();
+        PrintObserver printObserver = new PrintObserver();
+        RandomNumSubject randomNumberSubject = new RandomNumSubject();
+        randomNumberSubject.addObserver(binaryOutputObserver);
+        randomNumberSubject.addObserver(printObserver);
+        for (int i = 0; i < 10; i++) {
+            randomNumberSubject.generateRandomNum();
+        }
     }
 }
