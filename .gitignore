@@ -1,0 +1,176 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ==============================================================================
+# IDE 和编辑器配置文件 (IDE & Editor Configs)
+# ==============================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+gen/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+# 注释：通常忽略整个.vscode目录，但团队共享的配置(settings/launch)可以取消忽略
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+tmp/
+*.pydevproject
+
+# NetBeans
+nbproject/
+build/
+dist/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ==============================================================================
+# 语言和框架特定文件 (Language & Framework Specific)
+# ==============================================================================
+
+### Java / Maven / Gradle ###
+# 编译后的 class 文件
+*.class
+
+# 构建输出目录
+target/
+build/
+
+# 日志和打包文件
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+# 忽略由 Gradle Wrapper 生成的 jar 文件 (允许保留 gradlew 脚本)
+gradle/wrapper/gradle-wrapper.jar
+
+# JVM 崩溃日志
+hs_err_pid*
+replay_pid*
+
+
+### Node.js (如果项目也使用前端工具) ###
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# package-lock.json 和 yarn.lock 通常需要提交到版本库以确保依赖一致性，所以不忽略
+
+
+### Python (如果项目中有脚本) ###
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+.ipynb_checkpoints
+# 虚拟环境
+venv/
+env/
+.env/
+.venv/
+
+
+# ==============================================================================
+# 依赖项目录 (Dependency Directories)
+# ==============================================================================
+# 任何通过包管理器安装的依赖都应该被忽略
+# 例如: node_modules, jspm_packages, bower_components 等 (已在上面列出)
+
+
+# ==============================================================================
+# 临时文件和日志文件 (Temporary & Log Files)
+# ==============================================================================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+
+# ==============================================================================
+# 敏感信息 (Sensitive Information) - !!非常重要!!
+# ==============================================================================
+# 环境变量文件。只提交示例文件 (如 .env.example)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 配置文件 (如果包含密码、API密钥等)
+credentials.*
+config.local.js
+config.local.json
+
+# 私钥
+*.pem
+*.key
+
+# OAuth 凭证文件
+client_secret.json
+
+# ==============================================================================
+# 其他 (Miscellaneous)
+# ==============================================================================
+
+# 压缩文件
+*.zip
+*.gz
+*.rar
