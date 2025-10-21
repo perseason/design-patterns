@@ -5,6 +5,8 @@ import pers.lilpen.patterns.demo.behavioral.observer.RandomNumSubject;
 import pers.lilpen.patterns.demo.behavioral.visitor.Directory;
 import pers.lilpen.patterns.demo.behavioral.visitor.File;
 import pers.lilpen.patterns.demo.behavioral.visitor.ListVisitor;
+import pers.lilpen.patterns.demo.creational.factory.ShapeOfBlueFactory;
+import pers.lilpen.patterns.demo.creational.factory.ShapeOfRedFactory;
 import pers.lilpen.patterns.demo.structural.decorator.*;
 
 /**
@@ -50,5 +52,15 @@ public class TestPatterns {
         for (int i = 0; i < 10; i++) {
             randomNumberSubject.generateRandomNum();
         }
+    }
+
+    @Test
+    public void testAbstractFactory() {
+        ShapeOfRedFactory shapeOfRedFactory = new ShapeOfRedFactory();
+        ShapeOfBlueFactory shapeOfBlueFactory = new ShapeOfBlueFactory();
+        System.out.println(shapeOfRedFactory.createSphere(20.0).toString());
+        System.out.println(shapeOfBlueFactory.createSphere(15.0).toString());
+        System.out.println(shapeOfBlueFactory.createCube(10.0, 12.0, 14.0).toString());
+        System.out.println(shapeOfRedFactory.createCube(1, 2, 3).toString());
     }
 }
