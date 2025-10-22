@@ -1,4 +1,7 @@
 import org.junit.Test;
+import pers.lilpen.patterns.demo.behavioral.iterator.Book;
+import pers.lilpen.patterns.demo.behavioral.iterator.BookShelf;
+import pers.lilpen.patterns.demo.behavioral.iterator.Iterator;
 import pers.lilpen.patterns.demo.behavioral.observer.BinaryOutputObserver;
 import pers.lilpen.patterns.demo.behavioral.observer.PrintObserver;
 import pers.lilpen.patterns.demo.behavioral.observer.RandomNumSubject;
@@ -62,5 +65,19 @@ public class TestPatterns {
         System.out.println(shapeOfBlueFactory.createSphere(15.0).toString());
         System.out.println(shapeOfBlueFactory.createCube(10.0, 12.0, 14.0).toString());
         System.out.println(shapeOfRedFactory.createCube(1, 2, 3).toString());
+    }
+
+    @Test
+    public void testIterator() {
+        BookShelf bookShelf = new BookShelf();
+        bookShelf.appendBook(new Book("Java Programming1"));
+        bookShelf.appendBook(new Book("Java Programming2"));
+        bookShelf.appendBook(new Book("Java Programming3"));
+        bookShelf.appendBook(new Book("Java Programming4"));
+        Iterator<Book> iterator = bookShelf.iterator();
+        while (iterator.hasNext()) {
+            Book book = iterator.next();
+            System.out.println(book.getName());
+        }
     }
 }
