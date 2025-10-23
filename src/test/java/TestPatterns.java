@@ -10,6 +10,8 @@ import pers.lilpen.patterns.demo.behavioral.visitor.File;
 import pers.lilpen.patterns.demo.behavioral.visitor.ListVisitor;
 import pers.lilpen.patterns.demo.creational.factory.ShapeOfBlueFactory;
 import pers.lilpen.patterns.demo.creational.factory.ShapeOfRedFactory;
+import pers.lilpen.patterns.demo.structural.adapter.Banner;
+import pers.lilpen.patterns.demo.structural.adapter.PrintBanner;
 import pers.lilpen.patterns.demo.structural.decorator.*;
 
 /**
@@ -79,5 +81,12 @@ public class TestPatterns {
             Book book = iterator.next();
             System.out.println(book.getName());
         }
+    }
+
+    @Test
+    public void testAdapter() {
+        Banner banner = new PrintBanner("abc");
+        banner.showWithParen();
+        banner.showWithAster();
     }
 }
